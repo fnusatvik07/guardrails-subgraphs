@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="980" height="470" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Why per-thread subagents need their own name</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Namespaces are the folder each subgraph saves its state into</text>
+  <rect x="40" y="92" width="440" height="300" rx="16" ry="16" fill="#ffffff" stroke="#c0392b" stroke-width="1.5" opacity="1.0"/>
+  <text x="62" y="122" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#c0392b" font-weight="700" text-anchor="start" letter-spacing="1.1" opacity="1.0">WITHOUT A WRAPPER</text>
+  <text x="62" y="146" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Namespaces come from call order.</text>
+  <text x="62" y="182" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">call fruit first  -&gt;</text>
+  <rect x="206" y="166" width="62" height="24" rx="6" ry="6" fill="#fdecea" stroke="#c0392b" stroke-width="1.2" opacity="1.0"/>
+  <text x="237" y="182" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#c0392b" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">ns  1</text>
+  <text x="282" y="182" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">fruit's state</text>
+  <text x="62" y="228" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">call veggie next  -&gt;</text>
+  <rect x="206" y="212" width="62" height="24" rx="6" ry="6" fill="#fdecea" stroke="#c0392b" stroke-width="1.2" opacity="1.0"/>
+  <text x="237" y="228" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#c0392b" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">ns  2</text>
+  <text x="282" y="228" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">veggie's state</text>
+  <text x="62" y="274" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">reorder the calls -&gt;</text>
+  <rect x="206" y="258" width="62" height="24" rx="6" ry="6" fill="#fdecea" stroke="#c0392b" stroke-width="1.2" opacity="1.0"/>
+  <text x="237" y="274" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#c0392b" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">ns  1</text>
+  <text x="282" y="274" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">now veggie loads fruit's state</text>
+  <rect x="62" y="316" width="396" height="56" rx="10" ry="10" fill="#fdecea" stroke="#c0392b" stroke-width="1.5" opacity="1.0"/>
+  <text x="260" y="340" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">The state you load depends on the order</text>
+  <text x="260" y="358" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">you happened to write the calls in.</text>
+  <rect x="516" y="92" width="424" height="300" rx="16" ry="16" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="538" y="122" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#2f7d4f" font-weight="700" text-anchor="start" letter-spacing="1.1" opacity="1.0">WITH A ONE-NODE WRAPPER</text>
+  <text x="538" y="146" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Namespaces come from the node name.</text>
+  <text x="538" y="186" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">add_node("fruit_agent", ...)</text>
+  <rect x="538" y="196" width="200" height="26" rx="6" ry="6" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.2" opacity="1.0"/>
+  <text x="638" y="214" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">ns  fruit_agent</text>
+  <text x="538" y="252" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">add_node("veggie_agent", ...)</text>
+  <rect x="538" y="262" width="200" height="26" rx="6" ry="6" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.2" opacity="1.0"/>
+  <text x="638" y="280" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">ns  veggie_agent</text>
+  <rect x="538" y="316" width="380" height="56" rx="10" ry="10" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="728" y="340" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#2f7d4f" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">Stable and unique, whatever order</text>
+  <text x="728" y="358" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#2f7d4f" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">the model decides to call them in.</text>
+  <text x="490" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">A subgraph added with add_node already gets a name-based namespace. This wrapper just gives one to a subagent called from a tool.</text>
+</svg>

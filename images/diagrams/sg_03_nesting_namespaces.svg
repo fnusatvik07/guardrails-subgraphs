@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="980" height="470" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Nesting and namespaces</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Every level is sealed off from the ones above and below it</text>
+  <rect x="40" y="92" width="570" height="330" rx="16" ry="16" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <text x="62" y="120" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#6d28d9" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">parent   {"my_key": str}</text>
+  <rect x="70" y="136" width="510" height="272" rx="13" ry="13" fill="#f0eafc" stroke="#6d28d9" stroke-width="1.2" opacity="1.0" stroke-dasharray="5 4"/>
+  <rect x="96" y="160" width="458" height="224" rx="13" ry="13" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <text x="118" y="186" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">child   {"my_child_key": str}</text>
+  <rect x="126" y="200" width="402" height="168" rx="12" ry="12" fill="#e8effd" stroke="#2563eb" stroke-width="1.2" opacity="1.0" stroke-dasharray="5 4"/>
+  <rect x="152" y="224" width="350" height="122" rx="12" ry="12" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="174" y="250" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#2f7d4f" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">grandchild   {"my_grandchild_key": str}</text>
+  <rect x="180" y="264" width="294" height="66" rx="10" ry="10" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.2" opacity="1.0" stroke-dasharray="5 4"/>
+  <text x="327" y="292" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">grandchild_1</text>
+  <text x="327" y="312" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">cannot see my_key or my_child_key</text>
+  <text x="640" y="122" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">The namespace you see when streaming</text>
+  <text x="640" y="158" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#6d28d9" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1.0">[]</text>
+  <text x="640" y="177" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">the parent itself</text>
+  <text x="640" y="215" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2563eb" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1.0">['child:2e26...']</text>
+  <text x="640" y="234" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">one level down</text>
+  <text x="640" y="272" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2f7d4f" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1.0">['child:2e26...',</text>
+  <text x="640" y="289" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2f7d4f" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1.0"> 'child_1:781b...']</text>
+  <text x="640" y="308" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">two levels down, and the</text>
+  <text x="640" y="348" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">path is the full address</text>
+  <rect x="636" y="348" width="306" height="60" rx="10" ry="10" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="789" y="374" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Passing data down is your job:</text>
+  <text x="789" y="392" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">one dict in, one dict out, at each hop.</text>
+</svg>

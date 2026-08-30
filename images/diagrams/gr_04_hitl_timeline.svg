@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="980" height="430" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Human in the loop is a pause, not a prompt</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The process may exit. The checkpoint is what resumes it.</text>
+  <line x1="210" y1="130" x2="930" y2="130" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <text x="196" y="134" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1.0">agent process</text>
+  <line x1="210" y1="232" x2="930" y2="232" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <text x="196" y="236" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1.0">checkpointer</text>
+  <line x1="210" y1="334" x2="930" y2="334" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <text x="196" y="338" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1.0">human</text>
+  <rect x="224" y="110" width="128" height="40" rx="8" ry="8" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <text x="288.0" y="130" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#2563eb" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">run starts</text>
+  <rect x="372" y="110" width="150" height="40" rx="8" ry="8" fill="#fdf3e3" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <text x="447.0" y="130" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#b45309" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">tool needs OK</text>
+  <rect x="372" y="212" width="150" height="40" rx="8" ry="8" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="447.0" y="229" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">state saved</text>
+  <text x="447.0" y="244" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">thread_id</text>
+  <rect x="556" y="314" width="168" height="40" rx="8" ry="8" fill="#f0eafc" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <text x="640.0" y="331" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#6d28d9" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">reviews + decides</text>
+  <text x="640.0" y="346" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">approve / edit / reject</text>
+  <rect x="762" y="110" width="168" height="40" rx="8" ry="8" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <text x="846.0" y="127" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#2563eb" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">resumes mid-tool</text>
+  <text x="846.0" y="142" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">no replay of the past</text>
+  <path d="M 352 130 L 370 130" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <path d="M 447 152 L 447 210" fill="none" stroke="#2f7d4f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwG)"/>
+  <path d="M 524 240 L 552 322" fill="none" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwV)"/>
+  <path d="M 724 322 L 800 152" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <rect x="224" y="366" width="706" height="40" rx="10" ry="10" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="577" y="391" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Command(resume={"decisions": [{"type": "approve"}]})   sent on the same thread_id</text>
+</svg>

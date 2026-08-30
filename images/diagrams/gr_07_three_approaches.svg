@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="1000" height="500" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Three ways to keep a value away from the model</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Reach for them in this order</text>
+  <rect x="40" y="88" width="300" height="340" rx="16" ry="16" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="88" width="300" height="60" rx="16" ry="16" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="132" width="300" height="16" rx="0" ry="0" fill="#e8f5ee" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <circle cx="70" cy="118" r="15" fill="#2f7d4f" stroke="#2f7d4f" stroke-width="1.5"/>
+  <text x="70" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">1</text>
+  <text x="208" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Never put it in the chat</text>
+  <text x="60" y="176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The member is already signed in.</text>
+  <text x="60" y="194" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The tool reads identity from the</text>
+  <text x="60" y="212" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">session, not from the message.</text>
+  <rect x="60" y="236" width="260" height="46" rx="8" ry="8" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="190" y="258" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#2f7d4f" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">lookup_my_record()</text>
+  <text x="190" y="274" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">no arguments at all</text>
+  <text x="60" y="306" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Simplest and safest.</text>
+  <text x="60" y="323" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Nothing to leak, because</text>
+  <text x="60" y="340" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">nothing was ever typed.</text>
+  <line x1="60" y1="372" x2="320" y2="372" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="190" y="392" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Use when the value identifies the person</text>
+  <text x="190" y="407" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">you are already talking to.</text>
+  <rect x="360" y="88" width="300" height="340" rx="16" ry="16" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <rect x="360" y="88" width="300" height="60" rx="16" ry="16" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <rect x="360" y="132" width="300" height="16" rx="0" ry="0" fill="#e8effd" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <circle cx="390" cy="118" r="15" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="390" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">2</text>
+  <text x="528" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#2563eb" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Tokenise and rehydrate</text>
+  <text x="380" y="176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The value has to travel, but</text>
+  <text x="380" y="194" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">the model only needs to route</text>
+  <text x="380" y="212" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">it, not read it.</text>
+  <rect x="380" y="236" width="260" height="46" rx="8" ry="8" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="510" y="258" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#2563eb" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">lookup(ssn="&lt;ssn_1&gt;")</text>
+  <text x="510" y="274" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">swapped back by middleware</text>
+  <text x="380" y="306" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Works for any value.</text>
+  <text x="380" y="323" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Needs a vault, an allow list</text>
+  <text x="380" y="340" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">and an audit trail.</text>
+  <line x1="380" y1="372" x2="640" y2="372" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="510" y="392" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Use when the value comes from the</text>
+  <text x="510" y="407" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">conversation and a tool truly needs it.</text>
+  <rect x="680" y="88" width="300" height="340" rx="16" ry="16" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <rect x="680" y="88" width="300" height="60" rx="16" ry="16" fill="#f0eafc" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <rect x="680" y="132" width="300" height="16" rx="0" ry="0" fill="#f0eafc" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <circle cx="710" cy="118" r="15" fill="#6d28d9" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="710" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">3</text>
+  <text x="848" y="123" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#6d28d9" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Collect it out of band</text>
+  <text x="700" y="176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The tool pauses and asks for</text>
+  <text x="700" y="194" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">the value through a secure form</text>
+  <text x="700" y="212" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">that bypasses the chat.</text>
+  <rect x="700" y="236" width="260" height="46" rx="8" ry="8" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="830" y="258" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#6d28d9" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">interrupt({"field": "ssn"})</text>
+  <text x="830" y="274" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">resumed straight into the tool</text>
+  <text x="700" y="306" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Never enters messages at all.</text>
+  <text x="700" y="323" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Costs the member a round trip</text>
+  <text x="700" y="340" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">through another screen.</text>
+  <line x1="700" y1="372" x2="960" y2="372" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="830" y="392" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Use when the value must never be typed</text>
+  <text x="830" y="407" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">into a chat box in the first place.</text>
+  <text x="500" y="468" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Most teams reach for 2 first. Check whether 1 is available before you do.</text>
+</svg>

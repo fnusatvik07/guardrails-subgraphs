@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="604" viewBox="0 0 1000 604" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="1000" height="604" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Redact for the model, rehydrate for the tool</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The real value leaves your process only on the way to the tool that needs it</text>
+  <rect x="496" y="100" width="228" height="222" rx="14" ry="14" fill="#fdfbfa" stroke="#c0392b" stroke-width="1.5" opacity="1.0" stroke-dasharray="7 5"/>
+  <text x="610" y="122" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#c0392b" font-weight="700" text-anchor="middle" letter-spacing="0.6" opacity="1.0">OUTSIDE YOUR TRUST BOUNDARY</text>
+  <rect x="48" y="140" width="200" height="62" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="148.0" y="168.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">member types</text>
+  <text x="148.0" y="186.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">SSN 482-11-9930</text>
+  <path d="M 248 171 L 284 171" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <rect x="288" y="140" width="180" height="62" rx="12" ry="12" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <text x="378.0" y="168.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">before_model</text>
+  <text x="378.0" y="186.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">swap in a placeholder</text>
+  <path d="M 468 171 L 516 171" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <rect x="520" y="140" width="180" height="66" rx="12" ry="12" fill="#1b2430" stroke="#1b2430" stroke-width="1.5" opacity="1.0"/>
+  <text x="610" y="168" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">THE MODEL</text>
+  <text x="610" y="190" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#7fd1a5" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">sees only  &lt;ssn_1&gt;</text>
+  <path d="M 610 206 L 610 242" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <rect x="508" y="246" width="204" height="56" rx="12" ry="12" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="610.0" y="271.0" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">lookup(ssn="&lt;ssn_1&gt;")</text>
+  <text x="610.0" y="289.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">the model's tool call</text>
+  <path d="M 508 274 L 462 274" fill="none" stroke="#2f7d4f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwG)"/>
+  <rect x="268" y="246" width="190" height="56" rx="12" ry="12" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="363.0" y="271.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">wrap_tool_call</text>
+  <text x="363.0" y="289.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">put the real value back</text>
+  <path d="M 268 274 L 252 274" fill="none" stroke="#2f7d4f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwG)"/>
+  <rect x="48" y="246" width="200" height="56" rx="12" ry="12" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="148.0" y="271.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">the tool runs</text>
+  <text x="148.0" y="289.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">with 482-11-9930</text>
+  <rect x="48" y="356" width="664" height="92" rx="12" ry="12" fill="#f0eafc" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <text x="70" y="384" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6d28d9" font-weight="700" text-anchor="start" letter-spacing="1.1" opacity="1.0">THE VAULT</text>
+  <text x="70" y="406" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#1b2430" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1.0">&lt;ssn_1&gt;  -&gt;  482-11-9930</text>
+  <text x="70" y="428" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">in your process, keyed by thread, never sent anywhere</text>
+  <text x="688" y="386" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#2563eb" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1.0">written by before_model</text>
+  <text x="688" y="408" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#2f7d4f" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1.0">read by wrap_tool_call</text>
+  <path d="M 350 204 L 350 224 L 258 224 L 258 352" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" marker-end="url(#arwV)"/>
+  <path d="M 300 352 L 300 306" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" marker-end="url(#arwV)"/>
+  <rect x="744" y="136" width="216" height="312" rx="14" ry="14" fill="#ffffff" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="744" y="136" width="216" height="46" rx="14" ry="14" fill="#fdf3e3" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="744" y="166" width="216" height="16" rx="0" ry="0" fill="#fdf3e3" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="852" y="165" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#b45309" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">the allow list</text>
+  <text x="852" y="206" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Which tool may see</text>
+  <text x="852" y="224" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">which kind of value.</text>
+  <path d="M 768 262 L 772 266 L 779 257" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="790" y="266" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">lookup_member</text>
+  <text x="790" y="282" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">gets 482-11-9930</text>
+  <path d="M 769 313 L 778 322" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 778 313 L 769 322" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="790" y="322" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">send_email</text>
+  <text x="790" y="338" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">gets &lt;ssn_1&gt;</text>
+  <line x1="768" y1="366" x2="936" y2="366" stroke="#ecd9b6" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="852" y="390" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">A model that decides</text>
+  <text x="852" y="406" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">to leak it can only</text>
+  <text x="852" y="422" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">leak the placeholder.</text>
+  <text x="500" y="486" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">The model can reason about the value, refer to it, and route it to a tool.</text>
+  <text x="500" y="508" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">It just never learns what it is.</text>
+  <rect x="48" y="532" width="912" height="48" rx="10" ry="10" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="504" y="554" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Why PIIMiddleware cannot do this: redact, mask and hash are all one way.</text>
+  <text x="504" y="572" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Nothing turns [REDACTED_SSN] back into a number, which is exactly what they are for.</text>
+</svg>

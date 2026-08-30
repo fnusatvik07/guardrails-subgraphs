@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="1000" height="470" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Three ways a subgraph can remember</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Set with one argument:  builder.compile(checkpointer=...)</text>
+  <rect x="40" y="88" width="300" height="328" rx="16" ry="16" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="88" width="300" height="68" rx="16" ry="16" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="140" width="300" height="16" rx="0" ry="0" fill="#e8effd" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="190" y="116" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#2563eb" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Per-invocation</text>
+  <text x="190" y="138" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">checkpointer=None</text>
+  <text x="62" y="182" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Fresh state on every call.</text>
+  <text x="62" y="201" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Inherits the parent's</text>
+  <text x="62" y="220" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">checkpointer for the</text>
+  <text x="62" y="239" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">duration of one call.</text>
+  <path d="M 64 262 L 68 266 L 75 257" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="266" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">interrupt / resume</text>
+  <path d="M 64 286 L 68 290 L 75 281" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="290" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">durable execution</text>
+  <path d="M 64 310 L 68 314 L 75 305" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="314" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">parallel calls are safe</text>
+  <path d="M 65 329 L 74 338" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 74 329 L 65 338" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="338" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">no memory between calls</text>
+  <line x1="62" y1="362" x2="318" y2="362" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="190" y="384" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">The default. Use this unless you</text>
+  <text x="190" y="401" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">have a reason not to.</text>
+  <rect x="360" y="88" width="300" height="328" rx="16" ry="16" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="360" y="88" width="300" height="68" rx="16" ry="16" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="360" y="140" width="300" height="16" rx="0" ry="0" fill="#e8f5ee" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="510" y="116" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Per-thread</text>
+  <text x="510" y="138" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">checkpointer=True</text>
+  <text x="382" y="182" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">State accumulates on the</text>
+  <text x="382" y="201" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">thread. Call two picks up</text>
+  <text x="382" y="220" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">where call one stopped.</text>
+  <text x="382" y="239" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0"></text>
+  <path d="M 384 262 L 388 266 L 395 257" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="404" y="266" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">interrupt / resume</text>
+  <path d="M 384 286 L 388 290 L 395 281" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="404" y="290" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">durable execution</text>
+  <path d="M 384 310 L 388 314 L 395 305" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="404" y="314" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">multi-turn memory</text>
+  <path d="M 385 329 L 394 338" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 394 329 L 385 338" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="404" y="338" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">parallel calls collide</text>
+  <line x1="382" y1="362" x2="638" y2="362" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="510" y="384" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">For a subagent that must remember</text>
+  <text x="510" y="401" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">the conversation.</text>
+  <rect x="680" y="88" width="300" height="328" rx="16" ry="16" fill="#ffffff" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="680" y="88" width="300" height="68" rx="16" ry="16" fill="#fdf3e3" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="680" y="140" width="300" height="16" rx="0" ry="0" fill="#fdf3e3" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="830" y="116" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#b45309" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">Stateless</text>
+  <text x="830" y="138" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">checkpointer=False</text>
+  <text x="702" y="182" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Nothing is written down.</text>
+  <text x="702" y="201" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Behaves like an ordinary</text>
+  <text x="702" y="220" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">function call.</text>
+  <text x="702" y="239" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0"></text>
+  <path d="M 704 262 L 708 266 L 715 257" fill="none" stroke="#2f7d4f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="266" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">no bookkeeping cost</text>
+  <path d="M 705 281 L 714 290" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 714 281 L 705 290" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="290" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">no durable execution</text>
+  <path d="M 705 305 L 714 314" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 714 305 L 705 314" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="314" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">no state inspection</text>
+  <line x1="702" y1="362" x2="958" y2="362" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="830" y="384" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">For pure, cheap work with no</text>
+  <text x="830" y="401" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">side effects to protect.</text>
+  <text x="500" y="450" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">The parent must be compiled with a real checkpointer for any of this to matter.</text>
+</svg>

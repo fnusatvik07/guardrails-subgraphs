@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="980" height="430" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Four things you can do with PII</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Same detector, four different outcomes</text>
+  <rect x="60" y="218" width="210" height="62" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="165.0" y="246.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">user message</text>
+  <text x="165.0" y="264.0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">card 5105-1051-0510-5100</text>
+  <path d="M 276 249 L 322 126" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwB)"/>
+  <rect x="330" y="96" width="128" height="60" rx="10" ry="10" fill="#e8effd" stroke="#2563eb" stroke-width="1.5" opacity="1.0"/>
+  <text x="394" y="122" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#2563eb" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">redact</text>
+  <text x="394" y="141" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">strategy</text>
+  <text x="478" y="122" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">[REDACTED_CREDIT_CARD]</text>
+  <text x="478" y="141" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Model sees a placeholder. Nothing leaks.</text>
+  <path d="M 276 249 L 322 202" fill="none" stroke="#2f7d4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwG)"/>
+  <rect x="330" y="172" width="128" height="60" rx="10" ry="10" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="394" y="198" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#2f7d4f" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">mask</text>
+  <text x="394" y="217" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">strategy</text>
+  <text x="478" y="198" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">****-****-****-5100</text>
+  <text x="478" y="217" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Last 4 kept so a human can confirm it.</text>
+  <path d="M 276 249 L 322 278" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwV)"/>
+  <rect x="330" y="248" width="128" height="60" rx="10" ry="10" fill="#f0eafc" stroke="#6d28d9" stroke-width="1.5" opacity="1.0"/>
+  <text x="394" y="274" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#6d28d9" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">hash</text>
+  <text x="394" y="293" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">strategy</text>
+  <text x="478" y="274" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">a8f5f167f44f...</text>
+  <text x="478" y="293" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Same input maps to same token. Joinable.</text>
+  <path d="M 276 249 L 322 354" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arwR)"/>
+  <rect x="330" y="324" width="128" height="60" rx="10" ry="10" fill="#fdecea" stroke="#c0392b" stroke-width="1.5" opacity="1.0"/>
+  <text x="394" y="350" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#c0392b" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1.0">block</text>
+  <text x="394" y="369" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">strategy</text>
+  <text x="478" y="350" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">PIIDetectionError</text>
+  <text x="478" y="369" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Run stops. Nothing reaches the model.</text>
+  <text x="490" y="404" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">apply_to_input guards what goes in   /   apply_to_output guards what comes back   /   apply_to_tool_results guards what tools return</text>
+</svg>

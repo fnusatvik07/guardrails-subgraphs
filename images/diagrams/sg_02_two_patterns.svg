@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img">
+<defs>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748b"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#c0392b"/>
+  </marker>
+  <marker id="arwG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2f7d4f"/>
+  </marker>
+  <marker id="arwB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563eb"/>
+  </marker>
+  <marker id="arwV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#6d28d9"/>
+  </marker>
+</defs>
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <text x="40" y="46" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#1b2430" font-weight="700" text-anchor="start" letter-spacing="-0.2" opacity="1.0">Two ways to attach a subgraph</text>
+  <text x="40" y="68" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748b" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">The state schemas decide which one you are allowed to use</text>
+  <rect x="40" y="86" width="448" height="396" rx="16" ry="16" fill="#ffffff" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="86" width="448" height="46" rx="16" ry="16" fill="#fdf3e3" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <rect x="40" y="116" width="448" height="16" rx="0" ry="0" fill="#fdf3e3" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="64" y="116" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#b45309" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">A.  Call it inside a node</text>
+  <text x="64" y="158" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Schemas share nothing. You translate.</text>
+  <rect x="96" y="186" width="336" height="44" rx="12" ry="12" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="264.0" y="212.32" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">parent state:  {"foo": str}</text>
+  <path d="M 264 230 L 264 258" fill="none" stroke="#b45309" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="258" width="336" height="128" rx="12" ry="12" fill="#fdf3e3" stroke="#b45309" stroke-width="1.5" opacity="1.0"/>
+  <text x="264" y="282" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">def call_subgraph(state):</text>
+  <text x="264" y="306" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#b45309" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">out = sub.invoke({"bar": state["foo"]})</text>
+  <text x="264" y="328" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">(the subgraph runs)</text>
+  <text x="264" y="352" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#b45309" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">return {"foo": out["bar"]}</text>
+  <text x="264" y="374" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">you map both directions by hand</text>
+  <path d="M 264 386 L 264 414" fill="none" stroke="#b45309" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="414" width="336" height="44" rx="12" ry="12" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="264.0" y="440.32" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">parent state:  {"foo": str}</text>
+  <rect x="512" y="86" width="448" height="396" rx="16" ry="16" fill="#ffffff" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="512" y="86" width="448" height="46" rx="16" ry="16" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <rect x="512" y="116" width="448" height="16" rx="0" ry="0" fill="#e8f5ee" stroke="none" stroke-width="1.5" opacity="1.0"/>
+  <text x="536" y="116" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#2f7d4f" font-weight="700" text-anchor="start" letter-spacing="0" opacity="1.0">B.  Add it as a node</text>
+  <text x="536" y="158" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#1b2430" font-weight="400" text-anchor="start" letter-spacing="0" opacity="1.0">Schemas share a key. No translation.</text>
+  <rect x="568" y="186" width="336" height="44" rx="12" ry="12" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="736.0" y="212.32" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">parent state:  {"foo": str}</text>
+  <path d="M 736 230 L 736 258" fill="none" stroke="#2f7d4f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="568" y="258" width="336" height="128" rx="12" ry="12" fill="#e8f5ee" stroke="#2f7d4f" stroke-width="1.5" opacity="1.0"/>
+  <text x="736" y="284" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#2f7d4f" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">builder.add_node("node_1", subgraph)</text>
+  <text x="736" y="312" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">the subgraph reads and writes</text>
+  <text x="736" y="332" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#1b2430" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">the parent's own channels directly</text>
+  <text x="736" y="362" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">private keys stay private inside</text>
+  <path d="M 736 386 L 736 414" fill="none" stroke="#2f7d4f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="568" y="414" width="336" height="44" rx="12" ry="12" fill="#f7f9fc" stroke="#cbd5e1" stroke-width="1.5" opacity="1.0"/>
+  <text x="736.0" y="440.32" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#1b2430" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1.0">parent state:  {"foo": str}</text>
+  <text x="500" y="522" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#64748b" font-weight="400" text-anchor="middle" letter-spacing="0" opacity="1.0">Different schemas: you must use A.   Shared key: B is shorter, and LangGraph can see inside it.</text>
+</svg>
