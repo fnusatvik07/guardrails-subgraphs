@@ -19,8 +19,15 @@ with real model calls and saved outputs.
 
 <br>
 
-<img src="images/diagrams/gr_01_hook_map.png" width="47%" alt="The six middleware hook points around an agent turn">
-<img src="images/diagrams/sg_02_two_patterns.png" width="47%" alt="The two ways to attach a subgraph">
+<img src="images/diagrams/gr_01_hook_map.png" width="90%" alt="The six middleware hook points around an agent turn">
+
+<sub><b>Part A.</b> Guardrails: the six places middleware can inspect, change, or stop a run.</sub>
+
+<br><br>
+
+<img src="images/diagrams/sg_02_two_patterns.png" width="90%" alt="The two ways to attach a subgraph">
+
+<sub><b>Part B.</b> Subgraphs: the state schemas decide which of the two wirings you may use.</sub>
 
 </div>
 
@@ -68,43 +75,56 @@ paragraph would have been worse.
 Run them in this order. Guardrails is three notebooks, subgraphs is two, and each group is one
 continuous story.
 
-<table>
-<thead>
-<tr><th width="3%">#</th><th width="27%">Notebook</th><th width="30%">The story</th><th width="40%">What it covers</th></tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><b>1</b></td>
-<td><a href="notebooks/01_guardrails_stopping_bad_input.ipynb"><code>01_guardrails_stopping_bad_input</code></a></td>
-<td>Northwind Health leaks a member's card number into its compliance audit log</td>
-<td>The six middleware hooks. Deterministic vs model-based. <code>PIIMiddleware</code>, its four strategies, custom detectors, and input vs output vs tool results. Writing your own <code>before_agent</code> guardrail in both class and decorator form. Vetoing one tool call with <code>wrap_tool_call</code>.</td>
-</tr>
-<tr>
-<td align="center"><b>2</b></td>
-<td><a href="notebooks/02_guardrails_judgement_and_approval.ipynb"><code>02_guardrails_judgement_and_approval</code></a></td>
-<td>The same agent starts handing out medical advice</td>
-<td>Model-based guardrails in <code>after_agent</code>. Measuring what a judge costs and how to gate it. Human in the loop and all four reviewer decisions. Six layers assembled into one agent, a scenario matrix, and a guardrail test table.</td>
-</tr>
-<tr>
-<td align="center"><b>3</b></td>
-<td><a href="notebooks/05_guardrails_redact_but_still_look_up.ipynb"><code>05_guardrails_redact_but_still_look_up</code></a></td>
-<td>The member will not send their SSN to a model, but the lookup tool needs it</td>
-<td>Why redaction is one way and cannot be undone. Tokenise and rehydrate with a vault. Per-tool allow lists. Rejecting placeholders the model invented. What your own checkpointer sees that the model does not. Session identity and out of band collection.</td>
-</tr>
-<tr>
-<td align="center"><b>4</b></td>
-<td><a href="notebooks/03_subgraphs_composing_graphs.ipynb"><code>03_subgraphs_composing_graphs</code></a></td>
-<td>Aurora Retail splits one enormous graph across three teams</td>
-<td>What a subgraph is. Calling one inside a node when the schemas share nothing. Adding one straight to <code>add_node</code> when they share a key. Parent to child to grandchild nesting, and what a namespace is. Three ways to stream a nested run.</td>
-</tr>
-<tr>
-<td align="center"><b>5</b></td>
-<td><a href="notebooks/04_subgraphs_memory_and_control.ipynb"><code>04_subgraphs_memory_and_control</code></a></td>
-<td>Should the specialist remember the last question?</td>
-<td>Per-invocation, per-thread and stateless persistence. Durable execution, shown by counting how many times an expensive node runs. Namespace isolation. Reading a subgraph's state from the parent. Human approval from inside a subgraph.</td>
-</tr>
-</tbody>
-</table>
+| # | Notebook | The story |
+|:---:|---|---|
+| **1** | [`01_guardrails_stopping_bad_input`](notebooks/01_guardrails_stopping_bad_input.ipynb) | Northwind Health leaks a member's card number into its compliance audit log |
+| **2** | [`02_guardrails_judgement_and_approval`](notebooks/02_guardrails_judgement_and_approval.ipynb) | The same agent starts handing out medical advice |
+| **3** | [`05_guardrails_redact_but_still_look_up`](notebooks/05_guardrails_redact_but_still_look_up.ipynb) | The member will not send their SSN to a model, but the lookup tool needs it |
+| **4** | [`03_subgraphs_composing_graphs`](notebooks/03_subgraphs_composing_graphs.ipynb) | Aurora Retail splits one enormous graph across three teams |
+| **5** | [`04_subgraphs_memory_and_control`](notebooks/04_subgraphs_memory_and_control.ipynb) | Should the specialist remember the last question? |
+
+<details>
+<summary><b>What each one covers</b>, in order</summary>
+
+<br>
+
+**1. Stopping the bad input**
+- The six middleware hook points, and which one to reach for
+- Deterministic vs model-based guardrails, and why you want both
+- `PIIMiddleware`: four strategies, custom detectors, and input vs output vs tool results
+- Writing your own `before_agent` guardrail, in class and decorator form
+- Vetoing a single tool call with `wrap_tool_call`
+
+**2. Judgement and approval**
+- Model-based guardrails in `after_agent`, and why "is this safe" is the wrong question
+- Measuring what a judge costs, then gating it so you rarely pay
+- Human in the loop, and all four reviewer decisions: approve, edit, reject, respond
+- Six layers assembled into one agent, run against a scenario matrix
+- Writing guardrail tests that fail when someone breaks a layer
+
+**3. Redacted for the model, real for the tool**
+- Why redact, mask and hash are one way, demonstrated by breaking a lookup
+- Tokenise and rehydrate: a vault, stable placeholders, and where each half runs
+- Per-tool allow lists, which are the part that actually contains the damage
+- Rejecting placeholders the model invented rather than guessing
+- What your own checkpointer sees that the model does not, and how to fix it
+- Session identity and out of band collection, the two simpler options
+
+**4. Composing graphs**
+- What a subgraph is, and the one question that decides how you attach it
+- Calling a subgraph inside a node, when the schemas share nothing
+- Adding a subgraph straight to `add_node`, when they share a key
+- Parent to child to grandchild nesting, and what a namespace really is
+- Three ways to watch a nested run, and which to reach for
+
+**5. Memory and control**
+- Per-invocation, per-thread and stateless, proved by running all three
+- Durable execution, counted: how often an expensive node runs across a resume
+- Namespace isolation, and why per-thread subagents need their own name
+- Reading a subgraph's state from the parent, paused and finished
+- Human approval raised from two levels down
+
+</details>
 
 > **On the numbering.** Notebook `05` sits last on disk but belongs third in the class. It
 > answers the question that always comes up once people have seen part 1: *"if you redact my
